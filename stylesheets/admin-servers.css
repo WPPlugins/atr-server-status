@@ -1,0 +1,90 @@
+.ass-upper {
+	text-transform: uppercase;
+}
+.ass-center {
+	text-align: center;
+}
+.ass-admin-page-padding {
+	position: relative;
+	padding-right:20px;
+}
+.ass-cell-description {
+	display: block;
+	font-size: 12px;
+	color:#888;
+	font-weight: normal;
+}
+#ass-admin-message {
+	display: none;
+	border-radius: 0px;
+	padding:15px;
+	color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+table.ass-server-status input,
+table.ass-server-status select {
+	width:100%;
+}
+table.ass-server-status tr {
+	transition: all 0.1s ease!important;
+}
+table.ass-server-status tr.deleted {
+	background:rgb(242, 222, 222)!important;
+}
+table.ass-server-status tr.saved {
+	background:#dff0d8!important;
+}
+.ass-shortcode-display {
+	position: absolute;
+	right:20px;
+	top:0px;
+}
+.ass-shortcode-display {
+	line-height:14px;
+}
+.ass-shortcode-display pre {
+	background:#DDD;
+	cursor:pointer;
+	display: inline-block;
+}
+.ass-drag-handle {
+	cursor:pointer;
+}
+div.ass-server-status-message {
+	margin-top:20px!important;
+	margin-left:0px!important;
+}
+
+@media (max-width:782px) {
+	.ass-shortcode-display {
+		position: static;
+	}
+	.ass-shortcodes-label {
+		display: none;
+	}
+	.ass-table-responsive {
+		overflow-x:auto;
+	}
+	.ass-table-responsive table {
+		table-layout: initial;
+		width:1000px;
+	}
+	.ass-table-responsive .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.ass-table-responsive th {
+		vertical-align: top!important;
+	}
+	.ass-server-row td.moveit,
+	.ass-server-row th.moveit {
+		display: none!important;
+	}
+	#ass-admin-message {
+		font-size: 16px;
+	}
+	#ass-admin-message strong {
+		display: block;
+	}
+}
